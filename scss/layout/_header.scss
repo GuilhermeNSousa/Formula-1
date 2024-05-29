@@ -1,0 +1,29 @@
+@use '../abstracts/colors' as c;
+
+.menu{
+    background-color: c.$black;
+    height: 80px;
+
+    .menu-elements{
+        display: flex;
+        font-family: 'Josefin Sans', sans-serif;
+        gap: 150px;
+        justify-content: center;
+
+        .menu-items{
+            margin-top: 30px;
+            font-size: 25px;
+            color: c.$white;
+
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+            
+            .f1-logo{
+                margin-top: -10px;
+                width: 150px;
+            }
+        }
+    }
+}
