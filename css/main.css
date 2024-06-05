@@ -66,15 +66,23 @@ table {
 .menu .menu-elements .menu-items {
   margin-top: 30px;
   font-size: 25px;
-  color: #ffffff;
 }
 .menu .menu-elements .menu-items a {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
+  transition: 0.5s;
+}
+.menu .menu-elements .menu-items a:hover {
+  color: #dd1111;
 }
 .menu .menu-elements .menu-items .f1-logo {
   margin-top: -10px;
   width: 150px;
+  transition: transform 0.4s;
+  display: inline-block;
+}
+.menu .menu-elements .menu-items .f1-logo:hover {
+  transform: scale(1.05);
 }
 
 /*# sourceMappingURL=main.css.map */

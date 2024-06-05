@@ -13,17 +13,28 @@
         .menu-items{
             margin-top: 30px;
             font-size: 25px;
-            color: c.$white;
 
             a {
                 text-decoration: none;
-                color: #fff;
+                color: c.$white;
+                transition: 0.5s;
+
+                &:hover{
+                    color: c.$red;
+                }
             }
-            
+
             .f1-logo{
                 margin-top: -10px;
                 width: 150px;
+                transition: transform 0.4s;       
+                display: inline-block;  
+
+                &:hover{
+                    transform: scale(1.05);
+                }                       
             }
+
         }
     }
 }
