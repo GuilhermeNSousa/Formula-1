@@ -34,6 +34,10 @@ body {
   line-height: 1;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 menu, ol, ul {
   list-style: none;
 }
@@ -55,6 +59,7 @@ table {
 
 .menu {
   background-color: #000000;
+  width: 100vw;
   height: 80px;
 }
 .menu .menu-elements {
@@ -83,6 +88,13 @@ table {
 }
 .menu .menu-elements .menu-items .f1-logo:hover {
   transform: scale(1.05);
+}
+
+.f1-video {
+  width: 100vw;
+  position: relative;
+  top: -80px;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=main.css.map */
