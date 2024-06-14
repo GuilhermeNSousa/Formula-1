@@ -1,8 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@use '../abstracts/colors' as c;
+@use '../abstracts//fonts' as f;
 
 .f1-video {
     width: 100vw;
     position: relative;
     top: -80px;
     z-index: -1;
+}
+
+.container {
+    align-items: center;
+    background-color: blue;
+    display: flex;
+    height: 360px;
+    justify-content: space-around;
+    width: 50%;
+
+    .card {
+        background-color: c.$white;
+        border: 1px solid white;
+        border-radius: 7px;
+        height: 260px;
+        width: 250px;
+
+        .cardElements{
+            position: relative;
+            top: -60px;
+
+            .picture {
+                width: 250px;
+            }        
+    
+            .cardTexts{
+                background-color: c.$dark-gray;
+                color: c.$white;
+                border: 1px solid c.$dark-gray;
+                border-bottom-left-radius: 7px;
+                border-bottom-right-radius: 7px;
+                font-family: f.$f1Font;
+                font-weight: 5px;
+                height: 69px;
+                position: relative;
+                top: -3px;
+                left: -1px;   
+                width: 250px; 
+            }
+        }
+    }
 }

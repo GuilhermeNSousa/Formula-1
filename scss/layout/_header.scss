@@ -1,13 +1,15 @@
 @use '../abstracts/colors' as c;
+@use '../abstracts//fonts' as f;
 
 .menu{
     background-color: c.$black;
-    width: 100vw;
+    font-family: f.$f1Font;
+
     height: 80px;
+    width: 100vw;
 
     .menu-elements{
-        display: flex;
-        font-family: 'Josefin Sans', sans-serif;
+        display: flex;        
         gap: 150px;
         justify-content: center;
 
