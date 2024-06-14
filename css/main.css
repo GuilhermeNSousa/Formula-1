@@ -57,12 +57,16 @@ table {
 }
 
 @font-face {
-  font-family: "myFirstFont";
+  font-family: "regularFont";
   src: url(../fonts/Formula1-Regular.otf);
+}
+@font-face {
+  font-family: "boldFont";
+  src: url(../fonts/Formula1-Bold.otf);
 }
 .menu {
   background-color: #000000;
-  font-family: "myFirstFont";
+  font-family: "regularFont";
   height: 80px;
   width: 100vw;
 }
@@ -101,40 +105,67 @@ table {
 }
 
 .container {
-  align-items: center;
-  background-color: blue;
-  display: flex;
-  height: 360px;
-  justify-content: space-around;
   width: 50%;
 }
-.container .card {
-  background-color: #ffffff;
-  border: 1px solid white;
-  border-radius: 7px;
-  height: 260px;
-  width: 250px;
-}
-.container .card .cardElements {
+.container .title {
+  display: flex;
+  color: #ffffff;
+  font-family: "boldFont";
+  justify-content: center;
+  font-size: 40px;
   position: relative;
   top: -60px;
 }
-.container .card .cardElements .picture {
-  width: 250px;
-}
-.container .card .cardElements .cardTexts {
-  background-color: #2c2c2c;
+.container .cards {
+  align-items: center;
+  background-color: blue;
   color: #ffffff;
-  border: 1px solid #2c2c2c;
+  display: flex;
+  font-family: "regularFont";
+  height: 460px;
+  justify-content: space-around;
+  margin-top: -123px;
+  width: 100%;
+}
+.container .cards .card {
+  margin-top: 80px;
+  background-color: #ffffff;
+  border: 1px solid white;
+  border-radius: 7px;
+  height: 290px;
+  width: 270px;
+}
+.container .cards .card .cardElements {
+  position: relative;
+  top: -60px;
+}
+.container .cards .card .cardElements .picture {
+  width: 270px;
+}
+.container .cards .card .cardElements .cardTexts {
+  align-items: center;
+  background-color: #dd1111;
+  color: #ffffff;
+  display: flex;
+  border: 1px solid #dd1111;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
-  font-family: "myFirstFont";
-  font-weight: 5px;
-  height: 69px;
+  font-family: "regularFont";
+  font-size: 20px;
+  flex-wrap: wrap;
+  height: 99px;
+  justify-content: center;
   position: relative;
   top: -3px;
   left: -1px;
-  width: 250px;
+  width: 270px;
+}
+.container .cards .card .cardElements .cardTexts .firstName {
+  font-size: 15px;
+}
+.container .cards .card .cardElements .cardTexts .lastName {
+  font-family: "boldFont";
+  font-size: 23px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,6 +1,13 @@
 @font-face {
-    font-family: "myFirstFont";
+    font-family: "regularFont";
     src: url(../fonts/Formula1-Regular.otf);
 }
 
-$f1Font: "myFirstFont";
+$f1Font: "regularFont";
+
+@font-face {
+    font-family: "boldFont";
+    src: url(../fonts/Formula1-Bold.otf);
+}
+
+$f1BoldFont: "boldFont";

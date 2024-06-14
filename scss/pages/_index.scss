@@ -9,41 +9,72 @@
 }
 
 .container {
-    align-items: center;
-    background-color: blue;
-    display: flex;
-    height: 360px;
-    justify-content: space-around;
     width: 50%;
 
-    .card {
-        background-color: c.$white;
-        border: 1px solid white;
-        border-radius: 7px;
-        height: 260px;
-        width: 250px;
+    .title{
+        display: flex;
+        color: c.$white;
+        font-family: f.$f1BoldFont;
+        justify-content: center;
+        font-size: 40px;
+        position: relative;
+        top: -60px;
+    }
 
-        .cardElements{
-            position: relative;
-            top: -60px;
-
-            .picture {
-                width: 250px;
-            }        
+    .cards{
+        align-items: center;
+        background-color: blue;
+        color: c.$white;
+        display: flex;
+        font-family: f.$f1Font;
+        height: 460px;
+        justify-content: space-around;
+        margin-top: -123px;
+        width: 100%;
     
-            .cardTexts{
-                background-color: c.$dark-gray;
-                color: c.$white;
-                border: 1px solid c.$dark-gray;
-                border-bottom-left-radius: 7px;
-                border-bottom-right-radius: 7px;
-                font-family: f.$f1Font;
-                font-weight: 5px;
-                height: 69px;
+        .card {
+            margin-top: 80px;
+            background-color: c.$white;
+            border: 1px solid white;
+            border-radius: 7px;
+            height: 290px;
+            width: 270px;
+    
+            .cardElements{
                 position: relative;
-                top: -3px;
-                left: -1px;   
-                width: 250px; 
+                top: -60px;
+    
+                .picture {
+                    width: 270px;
+                }        
+        
+                .cardTexts{
+                    align-items: center;
+                    background-color: c.$red;
+                    color: c.$white;
+                    display: flex;
+                    border: 1px solid c.$red;
+                    border-bottom-left-radius: 7px;
+                    border-bottom-right-radius: 7px;
+                    font-family: f.$f1Font;
+                    font-size: 20px;
+                    flex-wrap: wrap;
+                    height: 99px;
+                    justify-content: center;
+                    position: relative;
+                    top: -3px;
+                    left: -1px;   
+                    width: 270px; 
+    
+                    .firstName{
+                        font-size: 15px;
+                    }
+    
+                    .lastName{
+                        font-family: f.$f1BoldFont;
+                        font-size: 23px;
+                    }
+                }
             }
         }
     }

@@ -4,6 +4,7 @@ function insertStandings(){
         .then((pilotos) => {
             var standings = pilotos.MRData.StandingsTable.StandingsLists[0].DriverStandings;
             var container = document.querySelector("#pilots-container");
+            var cards = document.querySelector("#cards");
 
             for (var i = 0; i < 3; i++){
                 console.log(standings[i]);
@@ -21,22 +22,28 @@ function insertStandings(){
                 var texts = document.createElement("div");
                 texts.classList.add("cardTexts")
 
-                var pilot = document.createElement("h3");
-                pilot.textContent = standings[i].Driver.givenName + " " + standings[i].Driver.familyName.toUpperCase();
+                var pilotName = document.createElement("h3");
+                pilotName.classList.add("firstName")
+                pilotName.textContent = standings[i].Driver.givenName;
+
+                var pilotLastName = document.createElement("h3");
+                pilotLastName.classList.add("lastName");
+                pilotLastName.textContent = standings[i].Driver.familyName.toUpperCase();
 
                 var position = document.createElement("h3");
                 position.textContent = "Position: " + standings[i].position;
 
-                
-                texts.appendChild(pilot);
-                texts.appendChild(position);
+                pilotName.appendChild(pilotLastName)
+                texts.appendChild(pilotName);
 
                 elements.appendChild(picture);
                 elements.appendChild(texts);
 
                 card.appendChild(elements);
 
-                container.appendChild(card);
+                cards.appendChild(card)
+
+                container.appendChild(cards);
             }
     })
 }
