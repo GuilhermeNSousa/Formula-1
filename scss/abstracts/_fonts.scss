@@ -11,3 +11,10 @@ $f1Font: "regularFont";
 }
 
 $f1BoldFont: "boldFont";
+
+@font-face {
+    font-family: "wideFont";
+    src: url(../fonts/Formula1-Wide.otf);
+}
+
+$f1WideFont: "wideFont";

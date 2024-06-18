@@ -64,6 +64,10 @@ table {
   font-family: "boldFont";
   src: url(../fonts/Formula1-Bold.otf);
 }
+@font-face {
+  font-family: "wideFont";
+  src: url(../fonts/Formula1-Wide.otf);
+}
 .menu {
   background-color: #000000;
   font-family: "regularFont";
@@ -104,45 +108,49 @@ table {
   z-index: -1;
 }
 
-.container {
-  width: 50%;
+.classification {
+  display: block;
 }
-.container .title {
+.classification .container {
+  width: 100%;
+  background-color: #000000;
+}
+.classification .container .title {
   display: flex;
   color: #ffffff;
-  font-family: "boldFont";
+  font-family: "wideFont";
+  font-size: 30px;
   justify-content: center;
-  font-size: 40px;
   position: relative;
   top: -60px;
 }
-.container .cards {
+.classification .container .cards {
   align-items: center;
-  background-color: blue;
+  background-color: #000000;
   color: #ffffff;
   display: flex;
   font-family: "regularFont";
   height: 460px;
-  justify-content: space-around;
   margin-top: -123px;
+  justify-content: center;
   width: 100%;
 }
-.container .cards .card {
-  margin-top: 80px;
-  background-color: #ffffff;
-  border: 1px solid white;
+.classification .container .cards .card {
+  margin: 80px 20px 0px 20px;
+  background-color: #2c2c2c;
+  border: 1px solid #2c2c2c;
   border-radius: 7px;
   height: 290px;
   width: 270px;
 }
-.container .cards .card .cardElements {
+.classification .container .cards .card .cardElements {
   position: relative;
   top: -60px;
 }
-.container .cards .card .cardElements .picture {
+.classification .container .cards .card .cardElements .picture {
   width: 270px;
 }
-.container .cards .card .cardElements .cardTexts {
+.classification .container .cards .card .cardElements .cardTexts {
   align-items: center;
   background-color: #dd1111;
   color: #ffffff;
@@ -160,12 +168,67 @@ table {
   left: -1px;
   width: 270px;
 }
-.container .cards .card .cardElements .cardTexts .firstName {
+.classification .container .cards .card .cardElements .cardTexts .firstName {
   font-size: 15px;
 }
-.container .cards .card .cardElements .cardTexts .lastName {
+.classification .container .cards .card .cardElements .cardTexts .lastName {
   font-family: "boldFont";
   font-size: 23px;
+}
+.classification .classificationList {
+  background-color: #000000;
+  width: 100%;
+  position: relative;
+  height: 530px;
+  display: flex;
+  justify-content: center;
+}
+.classification .classificationList .pilotsList {
+  color: #ffffff;
+  height: 473px;
+  width: 870px;
+}
+.classification .classificationList .pilotsList li {
+  align-items: center;
+  background-color: #2c2c2c;
+  border: 1px solid #2c2c2c;
+  border-radius: 5px;
+  display: flex;
+  height: 30px;
+  margin: 3px;
+  padding: 5px;
+}
+.classification .classificationList .pilotsList li .position {
+  font-family: "regularFont";
+  font-size: 13px;
+  margin-left: 5px;
+  margin-right: 20px;
+}
+.classification .classificationList .pilotsList li .firstName {
+  font-family: "regularFont";
+  font-size: 11px;
+}
+.classification .classificationList .pilotsList li .lastName {
+  font-family: "boldFont";
+  font-size: 16px;
+  margin-left: 4px;
+}
+.classification .classificationList .pilotsList li .team {
+  font-family: "regularFont";
+  font-size: 8px;
+  margin-left: 20px;
+  width: 100%;
+}
+.classification .classificationList .pilotsList li .points {
+  background-color: #6d6b6b;
+  border: 1px solid #6d6b6b;
+  border-radius: 5px;
+  display: flex;
+  font-family: "regularFont";
+  font-size: 11px;
+  justify-content: center;
+  padding: 2px;
+  width: 90px;
 }
 
 /*# sourceMappingURL=main.css.map */

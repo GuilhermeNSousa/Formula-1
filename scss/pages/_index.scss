@@ -8,72 +8,140 @@
     z-index: -1;
 }
 
-.container {
-    width: 50%;
+.classification{
+    display: block;
 
-    .title{
-        display: flex;
-        color: c.$white;
-        font-family: f.$f1BoldFont;
-        justify-content: center;
-        font-size: 40px;
-        position: relative;
-        top: -60px;
+    .container {
+        width: 100%;
+        background-color: c.$black;
+    
+        .title{
+            display: flex;
+            color: c.$white;
+            font-family: f.$f1WideFont;
+            font-size: 30px;
+            justify-content: center;
+            position: relative;
+            top: -60px;
+        }
+    
+        .cards{
+            align-items: center;
+            background-color: c.$black;
+            color: c.$white;
+            display: flex;
+            font-family: f.$f1Font;
+            height: 460px;
+            margin-top: -123px;            
+            justify-content: center;
+            width: 100%;
+        
+            .card {
+                margin: 80px 20px 0px 20px;
+                background-color: c.$dark-gray;
+                border: 1px solid c.$dark-gray;
+                border-radius: 7px;
+                height: 290px;
+                width: 270px;
+        
+                .cardElements{
+                    position: relative;
+                    top: -60px;
+        
+                    .picture {
+                        width: 270px;
+                    }        
+            
+                    .cardTexts{
+                        align-items: center;
+                        background-color: c.$red;
+                        color: c.$white;
+                        display: flex;
+                        border: 1px solid c.$red;
+                        border-bottom-left-radius: 7px;
+                        border-bottom-right-radius: 7px;
+                        font-family: f.$f1Font;
+                        font-size: 20px;
+                        flex-wrap: wrap;
+                        height: 99px;
+                        justify-content: center;
+                        position: relative;
+                        top: -3px;
+                        left: -1px;   
+                        width: 270px; 
+        
+                        .firstName{
+                            font-size: 15px;
+                        }
+        
+                        .lastName{
+                            font-family: f.$f1BoldFont;
+                            font-size: 23px;
+                        }
+                    }
+                }
+            }
+        }
     }
 
-    .cards{
-        align-items: center;
-        background-color: blue;
-        color: c.$white;
-        display: flex;
-        font-family: f.$f1Font;
-        height: 460px;
-        justify-content: space-around;
-        margin-top: -123px;
+    .classificationList{
+        background-color: c.$black;
         width: 100%;
-    
-        .card {
-            margin-top: 80px;
-            background-color: c.$white;
-            border: 1px solid white;
-            border-radius: 7px;
-            height: 290px;
-            width: 270px;
-    
-            .cardElements{
-                position: relative;
-                top: -60px;
-    
-                .picture {
-                    width: 270px;
-                }        
-        
-                .cardTexts{
-                    align-items: center;
-                    background-color: c.$red;
-                    color: c.$white;
-                    display: flex;
-                    border: 1px solid c.$red;
-                    border-bottom-left-radius: 7px;
-                    border-bottom-right-radius: 7px;
+        position: relative;
+        height: 530px;
+        display: flex;
+        justify-content: center;
+
+        .pilotsList{
+            color: c.$white;
+            height: 473px; 
+            width: 870px;        
+
+            li{
+                align-items: center;
+                background-color: c.$dark-gray;
+                border: 1px solid c.$dark-gray;      
+                border-radius: 5px;  
+                display: flex;      
+                height: 30px;
+                margin: 3px;
+                padding: 5px;              
+
+                .position {
                     font-family: f.$f1Font;
-                    font-size: 20px;
-                    flex-wrap: wrap;
-                    height: 99px;
-                    justify-content: center;
-                    position: relative;
-                    top: -3px;
-                    left: -1px;   
-                    width: 270px; 
-    
-                    .firstName{
-                        font-size: 15px;
-                    }
-    
+                    font-size: 13px;
+                    margin-left: 5px;
+                    margin-right: 20px;
+                }
+
+                .firstName{                
+                    font-family: f.$f1Font;
+                    font-size: 11px;
+                }
+
                     .lastName{
                         font-family: f.$f1BoldFont;
-                        font-size: 23px;
+                        font-size: 16px;
+                        margin-left: 4px;
                     }
+
+                .team {
+                    font-family: f.$f1Font;
+                    font-size: 8px;
+                    margin-left: 20px;
+                    width: 100%;
+                }
+
+                .points {
+                    background-color: c.$light-gray;
+                    border: 1px solid c.$light-gray;
+                    border-radius: 5px;
+                    display: flex;
+                    font-family: f.$f1Font;
+                    font-size: 11px;
+                    justify-content: center;
+                    padding: 2px;;
+                    width: 90px;            
                 }
             }
         }
